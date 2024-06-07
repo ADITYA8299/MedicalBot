@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Website</title>
+    <link rel="stylesheet" href="/MedicalBot/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">MedicBot</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="contact-info">
+                <span>Email: example@yourcorp.com</span>
+                <span>Phone: +00123456789</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>We Are Here to Help You</h1>
+                <p>Your health is our priority. Contact us for any medical assistance.</p>
+                <button>Learn More</button>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-cards">
+                    <div class="service-card">
+                        <h3>Endocrinology</h3>
+                        <p>Comprehensive care for diabetes and hormone disorders.</p>
+                        <button>Read More</button>
+                    </div>
+                    <div class="service-card">
+                        <h3>Cardiology</h3>
+                        <p>Advanced heart care and cardiology services.</p>
+                        <button>Read More</button>
+                    </div>
+                    <div class="service-card">
+                        <h3>Orthopedics</h3>
+                        <p>Expert care for bones, joints, and muscles.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+<!-- Chatbot Container -->
+<div class="ans">
+    <p>Chatbot</p>
+    <div class="chatbot-container">
+        <div class="chatbox" id="chatbox">
+            <div class="chat-log" id="chat-log"></div>
+        </div>
+        <div class="input-container">
+            <input type="text" id="user-input" placeholder="Type your message here..." onkeypress="checkEnter(event)">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+
+
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <h2>What Our Patients Say</h2>
+                <div class="testimonial-cards">
+                    <div class="testimonial-card">
+                        <p>"The medical chatbot was also a great help in managing my diabetes. It asked the right questions and provided useful information based on my responses."</p>
+                        <span>- John Doe</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Excellent service and user friendly. Highly recommended."</p>
+                        <span>- Jane Smith</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>" It guided me through some essential questions and provided a summary that I could discuss with my doctor."
+
+                            "</p>
+                        <span>- Robert Johnson</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3>What is the medical chatbot and how does it work?</h3>
+                    <p>The medical chatbot is an interactive tool designed to assist patients by asking a series of predefined questions related to their health conditions. It collects information through a conversational interface and provides useful advice.</p>
+                </div>
+                <div class="faq-item">
+                    <h3> What kind of questions will the chatbot ask me?</h3>
+                    <p>The chatbot will ask a series of questions relevant to managing your health. These questions are designed to gather comprehensive information to assist in your care.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I use the chatbot at any time?</h3>
+                    <p>Yes, the chatbot is available 24/7, allowing you to use it whenever you have questions or need assistance with your health management..</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+
+
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Medical. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="/MedicalBot/styles.css"></script>
+</body>
+</html>
